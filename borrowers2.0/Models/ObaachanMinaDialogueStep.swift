@@ -8,8 +8,9 @@
 import SwiftUI
 import Foundation
 
-struct ObaachanMinaDialogueStep {
-
+struct ObaachanMinaDialogueStep: Identifiable {
+    
+    let id = UUID()
     var speech: String? = nil
     var narration: String? = nil
     var speaker: Speaker? = nil

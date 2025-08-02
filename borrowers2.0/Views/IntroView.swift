@@ -12,9 +12,9 @@ struct IntroView: View {
     @State var finishedTyping = false
     
     let texts = [
-        "In our world, there are small\ncreatures.",
+        "In our world, there\nare small creatures.",
         "They hide close to\nour homes to borrow things.\nLike sugar or tea.",
-        "We call them borrowers."
+        "We call them\nborrowers."
     ]
     
     var body: some View {

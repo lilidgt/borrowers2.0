@@ -11,6 +11,7 @@ import Foundation
 struct TypingTextView: View {
     let finalText: String //texto inteiro
     let font: Font //p decidir a fonte
+    let color = Color("DarkBrown")
     var onFinished: (() -> Void)? = nil //pra avisar que acabou
     
     @State private var typedText = ""
@@ -20,7 +21,7 @@ struct TypingTextView: View {
     var body: some View {
         Text(typedText)
             .font(font)
-            .foregroundStyle(.darkBrown)
+            .foregroundStyle(color)
             .onAppear {
                 typing()
             }
