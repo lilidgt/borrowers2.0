@@ -36,7 +36,7 @@ struct ObaachanDialogueSceneView: View {
                         if let narration = steps[stepIndex].narration {
                             TypingTextView(
                                 finalText: narration,
-                                font: .custom("Baby Doll", size: 21)
+                                font: .custom("Baby Doll", size: 23)
                             ) {
                                 finishedTyping = true
                             }
@@ -48,13 +48,13 @@ struct ObaachanDialogueSceneView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 if let speaker = steps[stepIndex].speaker {
                                     Text(speaker == .obaachan ? "Obaachan:" : "Mina:")
-                                        .font(.custom("Baby Doll", size: 21))
+                                        .font(.custom("Baby Doll", size: 20))
                                         .foregroundColor(Color("LightBrown"))
                                 }
 
                                 TypingTextView(
                                     finalText: speech,
-                                    font: .custom("Baby Doll", size: 21)
+                                    font: .custom("Baby Doll", size: 23)
                                 ) {
                                     finishedTyping = true
                                 }
@@ -72,7 +72,7 @@ struct ObaachanDialogueSceneView: View {
                     
                     if finishedTyping {
                         Image(systemName: "chevron.down")
-                            .font(.custom("Baby Doll", size: 21))
+                            .font(.custom("Baby Doll", size: 23))
                             .opacity(0.6)
                             .padding(.top, 10)
                             .transition(.opacity)
